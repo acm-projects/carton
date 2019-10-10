@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "937282969577",
+    "firebase_url": "https://cartonlogintest.firebaseio.com",
+    "project_id": "cartonlogintest",
+    "storage_bucket": "cartonlogintest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937282969577:android:fe1c112c3bda019e7cb578",
+        "android_client_info": {
+          "package_name": "com.example.cartonlogintest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937282969577-lau9m3fjqvej89ptmpksof4728bfl3mj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4H_pVP4mpzX6RCTmn3UiR9Jr0HnIZxSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937282969577-lau9m3fjqvej89ptmpksof4728bfl3mj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
