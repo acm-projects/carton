@@ -4,7 +4,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,12 +15,10 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
         public TextView nameTextView;
-        public Button messageButton;
 
         public MyViewHolder(View temp){
             super(temp);
             nameTextView = (TextView) temp.findViewById(R.id.item_name);
-            messageButton = (Button) temp.findViewById((R.id.message_button));
         }
     }
 
@@ -46,10 +43,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
     public void onBindViewHolder(MyViewHolder vh, int pos){
         Item temp = pantry.get(pos);
         TextView textView = vh.nameTextView;
-        textView.setText(temp.getName());
-        Button button = vh.messageButton;
-        button.setText(temp.getTest() ? "TRUE" : "FALSE");
-        button.setEnabled(temp.getTest());
+        textView.setText(temp.getName() +"\t," + temp.getLabel() +"\t," + temp.getQuantity() +"\t," + temp.getPrice());
     }
 
     @Override
