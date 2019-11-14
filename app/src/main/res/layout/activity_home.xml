@@ -32,13 +32,15 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/Budget"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundlast"
+                    android:background="@drawable/circlebackgroundthird"
                     android:padding="10dp"
                     android:src="@drawable/ic_attach_money_black_24dp" />
 
                 <TextView
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -58,7 +60,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="160dp"
+            android:layout_width="135dp"
             android:layout_height="160dp"
             android:layout_margin="10dp"
             android:clickable="true"
@@ -71,6 +73,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/scan"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundgreen"
@@ -78,19 +81,22 @@
                     android:src="@drawable/ic_photo_camera_black_24dp" />
 
                 <TextView
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="SCAN"
+                    android:text="CAMERA"
                     android:textStyle="bold" />
 
-                <TextView
+                <Button
+                    android:id="@+id/btnCamera"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="Check your budget activities"
-                    android:textColor="@color/darkgray" />
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/textview_border"
+                    android:text="Scan grocery List"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkgray"/>
 
 
             </LinearLayout>
@@ -120,11 +126,12 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/AddList"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundthird"
+                    android:background="@drawable/circlebackgroundlast"
                     android:padding="10dp"
-                    android:src="@drawable/ic_attach_money_black_24dp" />
+                    android:src="@drawable/ic_playlist_add_black_24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -134,11 +141,11 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="124dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Check your budget activities"
+                    android:text=" Make your grocery List"
                     android:textColor="@color/darkgray" />
 
 
@@ -146,38 +153,39 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="160dp"
+            android:layout_width="150dp"
             android:layout_height="160dp"
             android:layout_margin="10dp"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="149dp"
                 android:layout_height="146dp"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/pantry"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/cerclebackgroundpurple"
                     android:padding="10dp"
-                    android:src="@drawable/ic_attach_money_black_24dp" />
+                    android:src="@drawable/ic_restaurant_menu_black_24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="INVENTORY"
+                    android:text="PANTRY"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="98dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Check your budget activities"
+                    android:text="Check your Pantry"
                     android:textColor="@color/darkgray" />
 
 
@@ -189,7 +197,8 @@
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="32dp"
+        android:background="@drawable/textview_border"
         android:text="Logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="44dp"
-        android:background="#039be5"
+        android:background="@color/colorPrimary"
         android:fontFamily="@font/fugaz_one"
         android:text="Carton"
         android:textColor="#F7F2F2"

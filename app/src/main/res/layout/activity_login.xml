@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+   >
+
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="44dp"
-        android:background="#039be5"
+        android:background="@color/colorPrimary"
         android:fontFamily="@font/fugaz_one"
         android:text="Carton"
         android:textColor="#F7F2F2"
@@ -62,6 +65,8 @@
         app:layout_constraintVertical_bias="0.542" />
 
     <Button
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:id="@+id/btnSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
