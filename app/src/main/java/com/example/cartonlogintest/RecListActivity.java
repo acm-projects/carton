@@ -26,11 +26,9 @@ public class RecListActivity extends AppCompatActivity{
 
     private static final int PERMISSION_REQUEST_STORAGE = 1000;
     private static final int READ_REQUEST_CODE = 42;
-    ArrayList<Item> pantry;
     ArrayList<Item> groceryList;
     Button myButton;
-
-
+    Item temp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +37,6 @@ public class RecListActivity extends AppCompatActivity{
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_list);
             RecyclerView listRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-
-
 
             myButton =  findViewById(R.id.addItemButton);
            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)
@@ -56,9 +52,16 @@ public class RecListActivity extends AppCompatActivity{
                 startActivity(addItem);
             }
             });
+            temp = Popup.getItem();
+            System.out.println("GETTING ITEM");
+            if(temp != null){
+            System.out.println("HERE2");
+            Item.addItem(groceryList,temp);
+            }
             ListAdapter adapter = new ListAdapter(groceryList);
             listRecyclerView.setAdapter(adapter);
             listRecyclerView.setLayoutManager(layoutManager);
+
     }
 
     private String readText(String inputFile) {
@@ -108,6 +111,4 @@ public class RecListActivity extends AppCompatActivity{
             }
         }
     }
-
-
 }
